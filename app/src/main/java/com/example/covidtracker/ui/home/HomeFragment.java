@@ -16,12 +16,12 @@ import com.example.covidtracker.R;
 
 public class HomeFragment extends Fragment {
 
-    private com.example.myapplication.ui.home.HomeViewModel homeViewModel;
+    private com.example.covidtracker.ui.home.HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                new ViewModelProvider(this).get(com.example.myapplication.ui.home.HomeViewModel.class);
+                new ViewModelProvider(this).get(com.example.covidtracker.ui.home.HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
