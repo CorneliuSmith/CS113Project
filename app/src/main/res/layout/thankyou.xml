@@ -10,39 +10,23 @@
     android:paddingTop="?attr/actionBarSize">
 
 
+<!-- Create an image to hold the banner at the top of the page -->
 
 
 
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <ImageView
+        android:id = "@+id/CovidBanner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-11dp"
+        android:scaleType = "centerCrop" />
 
 
 
     <!-- Navigation at bottom of page -->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
