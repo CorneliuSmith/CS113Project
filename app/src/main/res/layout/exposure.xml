@@ -44,6 +44,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <!-- Temp: This string should be in strings -->
+
+
+   
+    <TextView
+        android:id="@+id/askTested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="396dp"
+        android:text="Have you been tested for COVID-19?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <!-- Button to confirm a test result of Yes -->
     <Button
         android:id="@+id/Yes"
