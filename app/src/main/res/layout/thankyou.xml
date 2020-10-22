@@ -13,19 +13,19 @@
 <!-- Create an image to hold the banner at the top of the page -->
 
 
-
+    <!-- Navigation at bottom of page -->
 
     <ImageView
-        android:id = "@+id/CovidBanner"
+        android:id="@+id/CovidBanner"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:scaleType="centerCrop"
         tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-11dp"
-        android:scaleType = "centerCrop" />
-
-
-
-    <!-- Navigation at bottom of page -->
+        tools:layout_editor_absoluteY="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
