@@ -47,7 +47,7 @@
     <!-- Temp: This string should be in strings -->
 
 
-   
+
     <TextView
         android:id="@+id/askTested"
         android:layout_width="wrap_content"
