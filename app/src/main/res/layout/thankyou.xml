@@ -27,37 +27,48 @@
         app:layout_constraintVertical_bias="0.0"
         />
 
-    <!-- Create a divider using View -->
 
-
-
-    <!-- Navigation at bottom of page -->
-
-
-    <!-- Temp: This string should be in strings -->
 
     <View
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginBottom="508dp"
+        android:layout_marginBottom="572dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
 
-    <!-- TextView for thanking the user -->
-
     <TextView
         android:id="@+id/thankYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="296dp"
         android:text="Thank you for stopping the spread!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exposureMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="380dp"
+        android:text="Exposure in your area is below: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/Map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        tools:layout_editor_absoluteX="16dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
