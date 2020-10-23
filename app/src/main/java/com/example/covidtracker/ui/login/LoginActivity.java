@@ -5,6 +5,8 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,20 +25,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.covidtracker.R;
+import com.example.covidtracker.ui.exposure.ExposureActivity;
 import com.example.covidtracker.ui.login.LoginViewModel;
 import com.example.covidtracker.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
-
         final EditText usernameEditText = findViewById(R.id.username);
         final EditText passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
@@ -75,7 +76,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 //Complete and destroy login activity once successful
                 //finish();
-                setContentView(R.layout.exposure);
+                Intent mapIntent = new Intent(LoginActivity.this, ExposureActivity.class);
+                startActivity(mapIntent);
             }
         });
 
@@ -129,4 +131,5 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
+
 }

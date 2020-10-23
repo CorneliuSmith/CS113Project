@@ -1,6 +1,12 @@
 package com.example.covidtracker.ui.exposure;
+import com.example.covidtracker.ui.login.LoginActivity;
+import com.example.covidtracker.ui.map.MapsActivity;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
+
 import com.example.covidtracker.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,8 +34,8 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
         LatLng lincoln = new LatLng(33.1896, -117.349);
         gMap.addMarker(new MarkerOptions().position(riteAid).title("Positive"));
         gMap.addMarker(new MarkerOptions().position(lincoln).title("Positive"));
-        gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(33.18229, -117.3264),12));
         gMap.setMinZoomPreference(12);
+        gMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(33.18229, -117.3264)));
         gMap.getUiSettings().setZoomControlsEnabled(true);
         gMap.getUiSettings().setZoomGesturesEnabled(true);
     }
