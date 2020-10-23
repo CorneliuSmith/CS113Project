@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,8 +24,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.covidtracker.R;
+import com.example.covidtracker.ui.exposure.ExposureActivity;
 import com.example.covidtracker.ui.login.LoginViewModel;
 import com.example.covidtracker.ui.login.LoginViewModelFactory;
+import com.example.covidtracker.ui.status.StatusActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -74,8 +77,8 @@ public class LoginActivity extends AppCompatActivity {
                 setResult(Activity.RESULT_OK);
 
                 //Complete and destroy login activity once successful
-                //finish();
-                setContentView(R.layout.exposure);
+                startActivity(new Intent(LoginActivity.this, ExposureActivity.class));
+                finish();
             }
         });
 
