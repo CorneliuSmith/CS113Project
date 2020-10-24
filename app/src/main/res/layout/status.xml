@@ -26,17 +26,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="200dp"
-        android:text="Sorry, but you may have been exposed on 8/12/20"
+        android:text="Please Get Tested and put results"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_exp"
+        android:id="@+id/button_sta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginTop="302dp"
-        android:text="Status"
+        android:text="Maps"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
