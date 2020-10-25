@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.example.covidtracker"

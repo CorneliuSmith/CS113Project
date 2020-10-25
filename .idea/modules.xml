@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS113Project.Covid_Tracker.iml" filepath="$PROJECT_DIR$/.idea/modules/CS113Project.Covid_Tracker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Covid Tracker.Covid_Tracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Covid Tracker.Covid_Tracker.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Covid_Tracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Covid_Tracker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS113Project.iml" filepath="$PROJECT_DIR$/.idea/modules/CS113Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CS113Project.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CS113Project.app.iml" />
     </modules>
   </component>
 </project>
