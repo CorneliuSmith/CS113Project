@@ -25,10 +25,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:text="Please Get Tested and put results"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Text header for COVID result -->
+    <TextView
+
+        android:id="@+id/Covid_Status"
+        android:layout_width="268dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/status_activity"
+        />
+
+
+
+
+
+
+
+    <!-- Editable text for user to enter their result -->
+
 
     <Button
         android:id="@+id/button_sta"
