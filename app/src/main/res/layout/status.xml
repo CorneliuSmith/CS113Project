@@ -20,15 +20,6 @@
         app:menu="@menu/bottom_nav_menu" />
 
     <!-- Temp: This string should be in strings -->
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="50dp"
-        android:text="Please Get Tested and put results"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <!-- Text header for COVID result -->
@@ -38,12 +29,22 @@
 
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:text="Please Get Tested and put results"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
 
         android:id="@+id/Covid_Status"
         android:layout_width="268dp"
         android:layout_height="23dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
         android:text="@string/status_activity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
