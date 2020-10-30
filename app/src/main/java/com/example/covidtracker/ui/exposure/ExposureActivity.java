@@ -38,5 +38,10 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
         gMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(33.18229, -117.3264)));
         gMap.getUiSettings().setZoomControlsEnabled(true);
         gMap.getUiSettings().setZoomGesturesEnabled(true);
+        gMap.getUiSettings().setMapToolbarEnabled(false);
+        gMap.getUiSettings().setCompassEnabled(true);
+        gMap.getUiSettings().setRotateGesturesEnabled(false);
     }
+
+
 }
