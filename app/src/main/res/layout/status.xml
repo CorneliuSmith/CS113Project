@@ -11,8 +11,8 @@
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:background="?android:attr/windowBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -32,26 +32,41 @@
 
 
     <!-- Text header for COVID result -->
+
+
+    <!-- Editable text for user to enter their result -->
+
+
     <TextView
 
         android:id="@+id/Covid_Status"
         android:layout_width="268dp"
         android:layout_height="23dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/status_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/testResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/test_result"
+        android:imeOptions="actionDone"
+        android:inputType="textShortMessage"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/status_activity"
-        />
-
-
-
-
-
-
-
-    <!-- Editable text for user to enter their result -->
-
+        app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/button_sta"
