@@ -21,4 +21,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+        <string name="pause">Pause Location Updates</string>
+        <string name="resume">Resume Location Updates</string>
 </resources>
