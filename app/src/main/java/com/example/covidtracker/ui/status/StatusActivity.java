@@ -21,9 +21,9 @@ public class StatusActivity extends AppCompatActivity {
        /* Button button = (Button) findViewById(R.id.button_sta); */
 
         ImageButton mapsButton = (ImageButton)findViewById(R.id.mapsButton);
-        mapsButton.setImageResource(R.drawable.mapIcon);
+        mapsButton.setImageResource(R.drawable.mapicon);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        mapsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(StatusActivity.this, MapActivity.class));
