@@ -20,10 +20,10 @@
         android:inputType="text"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
-       />
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <EditText
         android:id="@+id/update_Email"
@@ -32,10 +32,10 @@
         android:layout_marginEnd="104dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
-        android:seletAllOnFocus="true"
+        android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toBottomOf="parent"
-        app:layout_constriantStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <Button
