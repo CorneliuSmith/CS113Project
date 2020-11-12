@@ -37,7 +37,7 @@
         android:layout_marginStart="104dp"
         android:layout_marginTop="308dp"
         android:text="Settings"
-        android:drawableRight="@drawable/statusicon"
+        android:drawableRight="@drawable/settingsicon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
