@@ -25,7 +25,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,26 +351,26 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="678" y="97" width="1279" height="1136" key="DiffContextDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603573933739" />
-    <state width="848" height="154" key="GridCell.Tab.0.bottom" timestamp="1605142546117">
+    <state width="963" height="154" key="GridCell.Tab.0.bottom" timestamp="1605147035697">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1396" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603445999783" />
-    <state width="848" height="154" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605142546117" />
-    <state width="848" height="154" key="GridCell.Tab.0.center" timestamp="1605142546117">
+    <state width="963" height="154" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605147035697" />
+    <state width="963" height="154" key="GridCell.Tab.0.center" timestamp="1605147035696">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1396" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
-    <state width="848" height="154" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605142546117" />
-    <state width="848" height="154" key="GridCell.Tab.0.left" timestamp="1605142546116">
+    <state width="963" height="154" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605147035696" />
+    <state width="963" height="154" key="GridCell.Tab.0.left" timestamp="1605147035696">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1396" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
-    <state width="848" height="154" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605142546116" />
-    <state width="848" height="154" key="GridCell.Tab.0.right" timestamp="1605142546117">
+    <state width="963" height="154" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605147035696" />
+    <state width="963" height="154" key="GridCell.Tab.0.right" timestamp="1605147035697">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="1396" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603445999782" />
-    <state width="848" height="154" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605142546117" />
+    <state width="963" height="154" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605147035697" />
     <state x="1086" y="330" key="SettingsEditor" timestamp="1603569125573">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
