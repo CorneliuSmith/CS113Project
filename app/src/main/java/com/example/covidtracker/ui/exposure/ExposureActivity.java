@@ -1,8 +1,8 @@
 package com.example.covidtracker.ui.exposure;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
 
 import com.example.covidtracker.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -11,18 +11,16 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.data.geojson.GeoJsonLayer;
-import com.google.maps.android.data.geojson.GeoJsonPointStyle;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.HashMap;
 
 
@@ -31,6 +29,7 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
     public static HashMap<String, String[]> counties =  new HashMap<String, String[]>();
     public static JSONObject obj;
 
+    /*
     public class CountyInformation extends AsyncTask<URL, Integer, JSONObject> {
 
         public JSONObject obj;
@@ -53,9 +52,6 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
         @Override
         protected JSONObject doInBackground(URL... urls) {
             try {
-                URL actNow = new URL(urls.toString());
-                HttpURLConnection connect = (HttpURLConnection) actNow.openConnection();
-
                 /*
                 //File tester = new File(connect.getInputStream());
                 BufferedReader read = new BufferedReader(new InputStreamReader(connect.getInputStream()));
@@ -72,7 +68,7 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
                     store[4] = store[5] = "";
                     counties.put(split[COUNTY_FIPS], store);
                 }
-                */
+
 
                 //System.out.println("shazbot" + counties.size());
                 //URL celeste = new URL("https://doc-00-7o-docs.googleusercontent.com/docs/securesc/k0u30gf6u7fqfnkjs2ca2mu9gqj4rkrf/knlrjs91mgtrkpvpmoguid52esm0t10p/1605252525000/16212445481544018714/16212445481544018714/1CVeXOgv4f53ikJoWUaZFGQyGpDgF1oHO?e=download&authuser=1&nonce=jh9jp9ktu63ha&user=16212445481544018714&hash=an6dl66mc6dua4nqeae97t253p0ibpc5");
@@ -100,6 +96,8 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
         }
     }
 
+    */
+
 
 
     private GoogleMap gMap;
@@ -118,17 +116,18 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
 
         gMap = googleMap;
         try {
+            readFiles();
             GeoJsonLayer layer = new GeoJsonLayer(gMap, R.raw.geojson, this);
             layer.addLayerToMap();
-            GeoJsonPointStyle style = layer.getDefaultPointStyle();
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        gMap.setMinZoomPreference(4);
-        gMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(40, -99)));
+        gMap.setMinZoomPreference(6);
+        gMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(33, -117)));
 
         gMap.getUiSettings().setZoomControlsEnabled(true);
         gMap.getUiSettings().setZoomGesturesEnabled(true);
@@ -138,13 +137,49 @@ public class ExposureActivity extends AppCompatActivity implements OnMapReadyCal
 
     }
 
-    public void readFile(){
-        //JSONObject jObj = new JSONObject(t);
+        public void readFiles(){
+        InputStream in = getResources().openRawResource(R.raw.geojson);
+        BufferedReader read = new BufferedReader(new InputStreamReader(in));
+        String line;
+        try{
+            while (((line = read.readLine()) != null)) {
+                line = cleanLine(line);
+                //Sunstring 51-56 returns FIPS value for each county
+                line = line.substring(51, 56);
+                counties.put(line, new String[2]);//Index[0] is positive cases, index[1] is population of county
+            }
+            read.close();
+            in = getResources().openRawResource(R.raw.countyinfectioncount);
+            read = new BufferedReader((new InputStreamReader(in)));
+            String[] first;
 
+            InputStream otherIn = getResources().openRawResource(R.raw.countypopulation);
+            BufferedReader popRead = new BufferedReader(new InputStreamReader(otherIn));
+            String otherLine;
+            String[] second;
+
+            while(((line = read.readLine()) != null) && (otherLine = popRead.readLine()) != null){
+                first = line.split(",");
+                second = otherLine.split(",");
+                counties.get(first[0])[0] = first[1];
+                counties.get(second[0])[1] = second[1]; //Both 0 indices have FIPS, 1 first index have positives cases and population
+            }
+            read.close();
+            popRead.close();
+        } catch (IOException e) {
+                e.printStackTrace();
+        }
+
+        }
+
+        public String cleanLine(String raw) {
+        return raw.replaceAll("\\s", "");
     }
 
+}
 
-    }
+
+
 
 
 
