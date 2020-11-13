@@ -14,27 +14,28 @@
         android:layout_width="166dp"
         android:layout_height="42dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="40dp"
         android:hint="@string/prompt_name"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/update_Email"
         android:layout_width="166dp"
         android:layout_height="42dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="104dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
