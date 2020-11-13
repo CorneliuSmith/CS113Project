@@ -58,6 +58,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="112dp"
         android:layout_marginBottom="8dp"
+        android:text="@string/privacy"
         app:layout_constraintBottom_toTopOf="@id/invite_Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/update_Email"

@@ -24,5 +24,6 @@
 
     <string name="prompt_name">Name</string>
     <string name="title">Profile Info</string>
+    <string name="privacy">Privacy Setting</string>
 
 </resources>
