@@ -23,5 +23,6 @@
     <string name="title_notifications">Notifications</string>
 
     <string name="prompt_name">Name</string>
+    <string name="title">Profile Info</string>
 
 </resources>
