@@ -27,7 +27,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:API" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99d83fec-8217-4b42-b2e5-f5170a0e36f3" name="Default Changelist" comment="Finished LoginActivity">
@@ -37,8 +43,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/ExposureActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/ExposureActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +105,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_API_25" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-23T09:54:12.626Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-14T16:42:58.689Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -103,7 +114,10 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1603437803464" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -266,7 +280,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -279,6 +299,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Began Firebase Login setup" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="245" y="189" key="#PSD" timestamp="1605377276566">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="245" y="189" key="#PSD/0.0.1440.900@0.0.1440.900" timestamp="1605377276566" />
     <state x="308" y="212" key="AndroidCreateResourceFileDialog" timestamp="1603448695430">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -291,29 +315,45 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604042377192" />
-    <state width="2517" height="358" key="GridCell.Tab.0.bottom" timestamp="1604718981841">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1396" height="238" key="GridCell.Tab.0.bottom" timestamp="1605417973638">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603445999783" />
+    <state width="1396" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605417973638" />
     <state width="2517" height="358" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604718981841" />
-    <state width="2517" height="358" key="GridCell.Tab.0.center" timestamp="1604718981841">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1396" height="238" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1605417560917" />
+    <state width="1396" height="238" key="GridCell.Tab.0.bottom/30.23.1410.877@30.23.1410.877" timestamp="1605401560145" />
+    <state width="1396" height="238" key="GridCell.Tab.0.center" timestamp="1605417973636">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
+    <state width="1396" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605417973636" />
     <state width="2517" height="358" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604718981841" />
-    <state width="2517" height="358" key="GridCell.Tab.0.left" timestamp="1604718981841">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1396" height="238" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1605417560916" />
+    <state width="1396" height="238" key="GridCell.Tab.0.center/30.23.1410.877@30.23.1410.877" timestamp="1605401560134" />
+    <state width="1396" height="238" key="GridCell.Tab.0.left" timestamp="1605417973636">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
+    <state width="1396" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605417973636" />
     <state width="2517" height="358" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604718981841" />
-    <state width="2517" height="358" key="GridCell.Tab.0.right" timestamp="1604718981841">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1396" height="238" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1605417560915" />
+    <state width="1396" height="238" key="GridCell.Tab.0.left/30.23.1410.877@30.23.1410.877" timestamp="1605401560132" />
+    <state width="1396" height="238" key="GridCell.Tab.0.right" timestamp="1605417973637">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603445999782" />
+    <state width="1396" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605417973637" />
     <state width="2517" height="358" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604718981841" />
+    <state width="1396" height="238" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1605417560916" />
+    <state width="1396" height="238" key="GridCell.Tab.0.right/30.23.1410.877@30.23.1410.877" timestamp="1605401560139" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1605377157329">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605377157329" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1604723324692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.363.1920.1040@0.0.2560.1400" timestamp="1604723324692" />
+    <state x="412" y="205" width="615" height="490" key="find.popup" timestamp="1605389850497">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="412" y="205" width="615" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605389850497" />
   </component>
 </project>
