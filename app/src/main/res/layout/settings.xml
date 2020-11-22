@@ -95,5 +95,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <Switch
+        android:id="@+id/bluetooth_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginButtom="420dp"
+        android:text="@string/bluetooth"
+        android:textAppearance="?android:textAppearanceMedium"
+        app:layout_constrainstStart_toStartOf="parent"
+        app:layout_constraintButtom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="355dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

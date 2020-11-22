@@ -26,5 +26,6 @@
     <string name="title">Profile Info</string>
     <string name="privacy">Privacy Setting</string>
     <string name = "auto_data">Data Sharing</string>
+    <string name = "bluetooth">Bluetooth On/Off</string>
 
 </resources>
