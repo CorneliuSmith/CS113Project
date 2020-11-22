@@ -84,7 +84,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Switch
+    <!--<Switch
         android:id="@+id/data_sharing_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +93,8 @@
         android:text="@string/auto_data"
         android:textAppearance="?android:textAppearanceMedium"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <Switch
         android:id="@+id/bluetooth_status"
@@ -105,7 +106,8 @@
         app:layout_constrainstStart_toStartOf="parent"
         app:layout_constraintButtom_toBottomOf="parent"
         tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" /> -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
