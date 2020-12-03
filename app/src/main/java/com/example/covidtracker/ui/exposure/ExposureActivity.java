@@ -4,31 +4,32 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
 import com.example.covidtracker.R;
 import com.example.covidtracker.ui.status.StatusActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.loader.content.Loader;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
-public class ExposureActivity extends AppCompatActivity {
+public class ExposureActivity extends AppCompatActivity implements InfoAdapter.ItemClickListener{
 
-    public static ArrayList<Information> list = new ArrayList<Information>();
-
+    public static ArrayList<Information> data = new ArrayList<Information>();
+    private InfoAdapter infoAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         new InfoLoader().execute();
         setContentView(R.layout.exposure);
 
-
+        RecyclerView recyclerView = findViewById(R.id.rvInformation);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        infoAdapter = new InfoAdapter(this, data);
+        infoAdapter.setClickListener(this);
+        recyclerView.setAdapter(infoAdapter);
         Button button = (Button) findViewById(R.id.button_exp);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,12 +39,17 @@ public class ExposureActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onItemClick(View view, int position) {
+
+    }
+
     private class InfoLoader extends AsyncTask {
 
         @Override
         protected Object doInBackground(Object[] objects) {
             final String DATA_URL = "https://api.covidtracking.com/v1/states/current.json";
-            list = (ArrayList<Information>)DataQuery.fetchArticleData(DATA_URL); //Sets up ArrayList with all data for all states
+            data = (ArrayList<Information>)DataQuery.fetchArticleData(DATA_URL); //Sets up ArrayList with all data for all states
             return null;
         }
     }
