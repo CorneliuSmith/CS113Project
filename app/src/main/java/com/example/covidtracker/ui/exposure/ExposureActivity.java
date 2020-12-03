@@ -25,13 +25,11 @@ public class ExposureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new InfoLoader().execute();
         setContentView(R.layout.exposure);
 
+
         Button button = (Button) findViewById(R.id.button_exp);
-
-        new InfoLoader().execute();
-
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +43,6 @@ public class ExposureActivity extends AppCompatActivity {
         @Override
         protected Object doInBackground(Object[] objects) {
             final String DATA_URL = "https://api.covidtracking.com/v1/states/current.json";
-            final String POP_URL = "api.census.gov/data/2019/pep/charagegroups?get=POP,NAME&for=state:";
             list = (ArrayList<Information>)DataQuery.fetchArticleData(DATA_URL); //Sets up ArrayList with all data for all states
             return null;
         }

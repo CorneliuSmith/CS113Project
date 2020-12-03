@@ -32,62 +32,63 @@ public class DataQuery {
      * @return
      */
     public static List<Information> fetchArticleData(String requestUrl) {
-        URL url = createUrl(requestUrl);
-
-        String jsonResponse = null;
+        URL stateURL = createUrl(requestUrl);
+        String stateResponse = null;
         try {
-            jsonResponse = makeHttpRequest(url);
+            stateResponse = makeHttpRequest(stateURL);
         } catch (IOException e) {
             System.out.println("oopsie");
         }
-
-        List<Information> data = extractArticle(jsonResponse);
-
+        List<Information> data = extractArticle(stateResponse);
         return data;
     }
 
     /**
      *
-     * @param articleJSON
+     * @param stateJSON
      * @return
      */
-    private static List<Information> extractArticle(String articleJSON) {
-        if (TextUtils.isEmpty(articleJSON)) {
+    private static List<Information> extractArticle(String stateJSON) {
+        if (TextUtils.isEmpty(stateJSON)) {
             return null;
         }
         List<Information> data = new ArrayList<>();
-
         try {
             String name;
-            int positiveIncrease, deathConfirmed;
-
-            Scanner reader = new Scanner(articleJSON);
+            int positiveIncrease, death;
+            int totalPositiveIncrease, totalDeath;
+            totalPositiveIncrease = totalDeath = 0;
+            Scanner reader = new Scanner(stateJSON);
             String line;
             JSONArray jsonArr;
             JSONObject jsonLine;
             int index = 0;
-
             line = reader.nextLine();
             jsonArr = new JSONArray(line);
 
-            while(index < jsonArr.length()){
+            while(index < jsonArr.length()){ //Reading Data API JSON response
                 jsonLine = jsonArr.getJSONObject(index);
                 name = jsonLine.getString("state");
-                positiveIncrease = jsonLine.getInt("positiveIncrease");
-                try {
-                    deathConfirmed = jsonLine.getInt("deathConfirmed");
-                } catch (JSONException n){deathConfirmed = 1;} //null pointer was caught while reading deaths
-                if(positiveIncrease > 0 && deathConfirmed > 0){
-                    data.add(new Information(name, positiveIncrease, deathConfirmed));
-               }
-                index++;
-            } //End while
-            Collections.sort(data, new Comparator<Information>() { //Sorts data by state name alphabetically
-                @Override
-                public int compare(Information information, Information t1) {
-                    return information.compareTo(t1);
+                try{
+                    positiveIncrease = jsonLine.getInt("positiveIncrease");
+                } catch (JSONException js){
+                    positiveIncrease = 1;
                 }
-            });
+                try {
+                    death = jsonLine.getInt("death");
+                } catch (JSONException n) {//null pointer was caught while reading deaths
+                    death = 1;
+                }
+                if(positiveIncrease > 0 && death > 0){
+                    data.add(new Information(name, death, positiveIncrease));
+                    totalDeath += death;
+                    totalPositiveIncrease += positiveIncrease;
+               }
+                index++; //Tracks position in JSONarr
+            } //End while
+            reader.close();
+            //Create last object displaying nationwide confirmed deaths and increase in cases
+            data.add(0, (new Information("United States", totalDeath, totalPositiveIncrease)));
 
             for(int i = 0; i < data.size(); i++){
                 System.out.println(data.get(i));
@@ -96,7 +97,6 @@ public class DataQuery {
             Log.e("DataQuery", "Problem parsing the articles JSON results", e);
         }
 
-        // Return the list of articles
         return data;
     }
 
