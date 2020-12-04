@@ -14,22 +14,26 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class ExposureActivity extends AppCompatActivity implements InfoAdapter.ItemClickListener{
 
-    public static ArrayList<Information> data = new ArrayList<Information>();
-    private InfoAdapter infoAdapter;
+    public static ArrayList<InformationViewModel> data = new ArrayList<InformationViewModel>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new InfoLoader().execute();
         setContentView(R.layout.exposure);
-
-        RecyclerView recyclerView = findViewById(R.id.rvInformation);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        infoAdapter = new InfoAdapter(this, data);
-        infoAdapter.setClickListener(this);
-        recyclerView.setAdapter(infoAdapter);
+        try {
+            Object result = new InfoLoader().execute().get();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.rv_information);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        //infoAdapter.setClickListener(this);
+        recyclerView.setAdapter(new InfoAdapter(this, data));
         Button button = (Button) findViewById(R.id.button_exp);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +53,7 @@ public class ExposureActivity extends AppCompatActivity implements InfoAdapter.I
         @Override
         protected Object doInBackground(Object[] objects) {
             final String DATA_URL = "https://api.covidtracking.com/v1/states/current.json";
-            data = (ArrayList<Information>)DataQuery.fetchArticleData(DATA_URL); //Sets up ArrayList with all data for all states
+            data = (ArrayList<InformationViewModel>)DataQuery.fetchArticleData(DATA_URL); //Sets up ArrayList with all data for all states
             return null;
         }
     }

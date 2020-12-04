@@ -1,8 +1,12 @@
 package com.example.covidtracker.ui.exposure;
 
-import android.os.health.SystemHealthManager;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.covidtracker.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,8 +21,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,7 +33,7 @@ public class DataQuery {
      * @param requestUrl
      * @return
      */
-    public static List<Information> fetchArticleData(String requestUrl) {
+    public static List<InformationViewModel> fetchArticleData(String requestUrl) {
         URL stateURL = createUrl(requestUrl);
         String stateResponse = null;
         try {
@@ -39,7 +41,7 @@ public class DataQuery {
         } catch (IOException e) {
             System.out.println("oopsie");
         }
-        List<Information> data = extractArticle(stateResponse);
+        List<InformationViewModel> data = extractArticle(stateResponse);
         return data;
     }
 
@@ -48,11 +50,11 @@ public class DataQuery {
      * @param stateJSON
      * @return
      */
-    private static List<Information> extractArticle(String stateJSON) {
+    private static List<InformationViewModel> extractArticle(String stateJSON) {
         if (TextUtils.isEmpty(stateJSON)) {
             return null;
         }
-        List<Information> data = new ArrayList<>();
+        List<InformationViewModel> data = new ArrayList<>();
         try {
             String name;
             int positiveIncrease, death;
@@ -80,7 +82,7 @@ public class DataQuery {
                     death = 1;
                 }
                 if(positiveIncrease > 0 && death > 0){
-                    data.add(new Information(name, death, positiveIncrease));
+                    data.add(new InformationViewModel(name, death, positiveIncrease));
                     totalDeath += death;
                     totalPositiveIncrease += positiveIncrease;
                }
@@ -88,11 +90,7 @@ public class DataQuery {
             } //End while
             reader.close();
             //Create last object displaying nationwide confirmed deaths and increase in cases
-            data.add(0, (new Information("United States", totalDeath, totalPositiveIncrease)));
-
-            for(int i = 0; i < data.size(); i++){
-                System.out.println(data.get(i));
-            }
+            data.add(0, (new InformationViewModel("United States", totalDeath, totalPositiveIncrease)));
         } catch (JSONException e) {
             Log.e("DataQuery", "Problem parsing the articles JSON results", e);
         }

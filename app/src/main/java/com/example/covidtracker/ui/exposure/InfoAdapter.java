@@ -12,10 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.covidtracker.R;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
-public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
+public class InfoAdapter extends RecyclerView.Adapter{
 
-    private ArrayList<Information> data;
+    private ArrayList<InformationViewModel> data;
     private LayoutInflater inflater;
     private ItemClickListener itemListener;
 
@@ -24,8 +25,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
 
         ViewHolder(View item){
             super(item);
-            infoItemView = item.findViewById(R.id.rvInformation);
-            item.setOnClickListener(this);
+            infoItemView = (TextView) item.findViewById(R.id.info_text_view);
         }
 
         @Override
@@ -34,29 +34,43 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
                 itemListener.onItemClick(view, getAdapterPosition());
             }
         }
+
+        public void bindData(final InformationViewModel item){
+            infoItemView.setText(item.toString());
+        }
     }
 
-    public InfoAdapter(Context context, ArrayList<Information> data){
+    public InfoAdapter(Context context, ArrayList<InformationViewModel> data){
         this.inflater = LayoutInflater.from(context);
         this.data = data;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.recyclerview_information_item, parent, false);
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(Objects.requireNonNull(parent).getContext()).inflate(viewType, parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.infoItemView.setText(data.get(position).toString());
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        ((ViewHolder)holder).bindData(data.get(position));
     }
 
 
     @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView){
+        super.onAttachedToRecyclerView(recyclerView);
+    }
+
+    @Override
     public int getItemCount() {
         return data.size();
+    }
+
+    @Override
+    public int getItemViewType(final int position){
+        return R.layout.recyclerview_information_item;
     }
 
     void setClickListener(ItemClickListener itemListener){
