@@ -1,6 +1,8 @@
 package com.example.covidtracker.ui.exposure;
 
 import android.content.Context;
+import android.graphics.Typeface;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.covidtracker.R;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -36,7 +40,8 @@ public class InfoAdapter extends RecyclerView.Adapter{
         }
 
         public void bindData(final InformationViewModel item){
-            infoItemView.setText(item.toString());
+            infoItemView.setText(Html.fromHtml("<b>" + item.getName()  + "</b>"));
+            infoItemView.append("\n" + item.toString());
         }
     }
 
@@ -59,7 +64,7 @@ public class InfoAdapter extends RecyclerView.Adapter{
 
 
     @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView){
+    public void onAttachedToRecyclerView(@NotNull RecyclerView recyclerView){
         super.onAttachedToRecyclerView(recyclerView);
     }
 

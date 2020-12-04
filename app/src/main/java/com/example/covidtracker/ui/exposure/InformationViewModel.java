@@ -22,7 +22,7 @@ public class InformationViewModel implements Comparable{
     }
 
     public String toString(){
-        String line = String.format("%s%nDeaths to Date: %d%nDaily Increase in Cases: %d", this.name, this.deaths, this.positiveIncrease);
+        String line = String.format("Deaths to Date: %d%nDaily Case Increase: %d", this.deaths, this.positiveIncrease);
         return line;
     }
 

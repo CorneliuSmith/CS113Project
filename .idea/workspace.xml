@@ -41,18 +41,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/DataQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/DataQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/ExposureActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/ExposureActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/InfoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/InfoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/InformationViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/exposure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/exposure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/InformationViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/InformationViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_information_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_information_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -343,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607032756772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Exposure Screen Alpha&#10;Exposure home screen now displays Deaths to Date and Daily Case Increase for every state, sorted alphabetically">
+      <created>1607053252496</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607053252496</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +376,8 @@
     <MESSAGE value="Initial commit for new branch" />
     <MESSAGE value="Implementing RecyclerView&#10;Created adapter for Information objects, incomplete" />
     <MESSAGE value="Implementing RecyclerView&#10;InfoAdapter is built, debugging needed for proper listing to home screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing RecyclerView&#10;InfoAdapter is built, debugging needed for proper listing to home screen" />
+    <MESSAGE value="Exposure Screen Alpha&#10;Exposure home screen now displays Deaths to Date and Daily Case Increase for every state, sorted alphabetically" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exposure Screen Alpha&#10;Exposure home screen now displays Deaths to Date and Daily Case Increase for every state, sorted alphabetically" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1668" y="561" key="#Notifications" timestamp="1603574321418">
@@ -406,10 +409,10 @@
     </state>
     <state x="397" y="254" key="AndroidCreateResourceFileDialog/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607028760169" />
     <state x="308" y="212" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603448695430" />
-    <state x="530" y="291" key="AndroidProcessChooserDialog" timestamp="1607051584459">
+    <state x="530" y="291" key="AndroidProcessChooserDialog" timestamp="1607054241236">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="530" y="291" key="AndroidProcessChooserDialog/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607051584459" />
+    <state x="530" y="291" key="AndroidProcessChooserDialog/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054241236" />
     <state width="526" height="442" key="Diff.GoToChangePopup" timestamp="1603573898365">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -418,54 +421,54 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="678" y="97" width="1279" height="1136" key="DiffContextDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603573933739" />
-    <state width="1427" height="292" key="GridCell.Tab.0.bottom" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.0.bottom" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.0.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
+    <state width="1427" height="292" key="GridCell.Tab.0.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
     <state width="1396" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603445999783" />
     <state width="1111" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1604009921537" />
-    <state width="1427" height="292" key="GridCell.Tab.0.center" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.0.center" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.0.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
+    <state width="1427" height="292" key="GridCell.Tab.0.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
     <state width="1396" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
     <state width="1111" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1604009921537" />
-    <state width="1427" height="292" key="GridCell.Tab.0.left" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.0.left" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.0.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
+    <state width="1427" height="292" key="GridCell.Tab.0.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
     <state width="1396" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603445999781" />
     <state width="1111" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1604009921537" />
-    <state width="1427" height="292" key="GridCell.Tab.0.right" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.0.right" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.0.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
+    <state width="1427" height="292" key="GridCell.Tab.0.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
     <state width="1396" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603445999782" />
     <state width="1111" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1604009921537" />
-    <state width="1427" height="292" key="GridCell.Tab.1.bottom" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.1.bottom" timestamp="1607054617251">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.1.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
-    <state width="1427" height="292" key="GridCell.Tab.1.center" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.1.bottom/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617251" />
+    <state width="1427" height="292" key="GridCell.Tab.1.center" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.1.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
-    <state width="1427" height="292" key="GridCell.Tab.1.left" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.1.center/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
+    <state width="1427" height="292" key="GridCell.Tab.1.left" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.1.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
-    <state width="1427" height="292" key="GridCell.Tab.1.right" timestamp="1607052955777">
+    <state width="1427" height="292" key="GridCell.Tab.1.left/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
+    <state width="1427" height="292" key="GridCell.Tab.1.right" timestamp="1607054617250">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1427" height="292" key="GridCell.Tab.1.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607052955777" />
+    <state width="1427" height="292" key="GridCell.Tab.1.right/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607054617250" />
     <state x="1086" y="330" key="SettingsEditor" timestamp="1603569125573">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1086" y="330" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1603569125573" />
-    <state x="521" y="273" key="Vcs.Push.Dialog.v2" timestamp="1607032765162">
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2" timestamp="1607053258596">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="273" key="Vcs.Push.Dialog.v2/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607032765162" />
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2/-1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1607053258596" />
     <state x="1514" y="432" width="654" height="518" key="VcsDiffUtil.ChangesDialog" timestamp="1603574522058">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -480,7 +483,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/covidtracker/ui/exposure/ExposureActivity.java</url>
-          <line>22</line>
+          <line>24</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

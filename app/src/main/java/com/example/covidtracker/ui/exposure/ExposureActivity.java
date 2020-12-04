@@ -11,6 +11,7 @@ import com.example.covidtracker.ui.status.StatusActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class ExposureActivity extends AppCompatActivity implements InfoAdapter.I
             e.printStackTrace();
         }
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.rv_information);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         //infoAdapter.setClickListener(this);
         recyclerView.setAdapter(new InfoAdapter(this, data));
         Button button = (Button) findViewById(R.id.button_exp);
