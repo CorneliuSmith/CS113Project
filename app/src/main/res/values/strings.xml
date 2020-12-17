@@ -16,9 +16,17 @@
 
     <!-- Status Page -->
     <string name="status_activity">Your COVID Status</string>
+    <string name="test_result">Test Result</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name = "title_Settings">Settings</string>
+
+    <string name="prompt_name">Name</string>
+    <string name="title">Profile Info</string>
+    <string name="privacy">Privacy Setting</string>
+    <string name = "auto_data">Data Sharing</string>
+    <string name = "bluetooth">Bluetooth On/Off</string>
 
 </resources>
