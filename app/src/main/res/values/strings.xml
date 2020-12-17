@@ -16,6 +16,7 @@
 
     <!-- Status Page -->
     <string name="status_activity">Your COVID Status</string>
+    <string name="test_result">Test Result</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
