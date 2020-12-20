@@ -5,12 +5,18 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a7cf29d2a901b5dd9b8e42b155f25ce/jetified-firebase-components-16.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a7cf29d2a901b5dd9b8e42b155f25ce/jetified-firebase-components-16.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a7cf29d2a901b5dd9b8e42b155f25ce/jetified-firebase-components-16.0.0/AndroidManifest.xml" />
+      <root url="file://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/8a7cf29d2a901b5dd9b8e42b155f25ce/jetified-firebase-components-16.0.0/res" />
+      <root url="file://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/cce04cadcd0e34e0f6736809a265074e/jetified-firebase-components-16.0.0/res" />
+      <root url="file://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/cce04cadcd0e34e0f6736809a265074e/jetified-firebase-components-16.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/cce04cadcd0e34e0f6736809a265074e/jetified-firebase-components-16.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-components/16.0.0/f1f25eec68651b3cbe494a265507ac945fdb9e61/firebase-components-16.0.0-javadoc.jar!/" />
+      <root url="jar://D:/Tools/gradle-6.7/caches/modules-2/files-2.1/com.google.firebase/firebase-components/16.0.0/f1f25eec68651b3cbe494a265507ac945fdb9e61/firebase-components-16.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-components/16.0.0/f5456d4823243672c7135dff6b3a35cd39617610/firebase-components-16.0.0-sources.jar!/" />
+      <root url="jar://D:/Tools/gradle-6.7/caches/modules-2/files-2.1/com.google.firebase/firebase-components/16.0.0/f5456d4823243672c7135dff6b3a35cd39617610/firebase-components-16.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

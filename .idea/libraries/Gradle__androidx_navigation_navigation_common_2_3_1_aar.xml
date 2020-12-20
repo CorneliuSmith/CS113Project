@@ -4,10 +4,14 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e990a5e60a0be2f2f9c7c96e1b1c5b67/navigation-common-2.3.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e990a5e60a0be2f2f9c7c96e1b1c5b67/navigation-common-2.3.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e990a5e60a0be2f2f9c7c96e1b1c5b67/navigation-common-2.3.1/AndroidManifest.xml" />
+      <root url="file://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/1ba6c7b2d22c949fd82151d17ce709f7/navigation-common-2.3.1/AndroidManifest.xml" />
+      <root url="file://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/1ba6c7b2d22c949fd82151d17ce709f7/navigation-common-2.3.1/res" />
+      <root url="jar://D:/Tools/gradle-6.7/caches/transforms-2/files-2.1/1ba6c7b2d22c949fd82151d17ce709f7/navigation-common-2.3.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.3.1/3b8f206a6105edba31131223dbc4ce128f44e543/navigation-common-2.3.1-sources.jar!/" />
+      <root url="jar://D:/Tools/gradle-6.7/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.3.1/3b8f206a6105edba31131223dbc4ce128f44e543/navigation-common-2.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
